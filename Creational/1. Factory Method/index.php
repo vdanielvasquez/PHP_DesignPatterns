@@ -69,7 +69,7 @@ function deliverCourier(Courier $courier){
 
 
 //creates specific instances
-echo "From the air \n";
+echo "From the air ... \n";
 deliverCourier(new AirCourier());
 
 echo "From the ground ... \n";
