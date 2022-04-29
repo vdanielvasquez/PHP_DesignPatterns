@@ -1,5 +1,6 @@
 <?php
 
+//base model
 interface Transport {
     public function ready(): void;
     public function  dispatch(): void;
@@ -34,7 +35,7 @@ class TruckTransport implements Transport {
     }
 }
 
-
+//creational object
 abstract class Courier {
     abstract function  getCourierTransport(): Transport;
 
@@ -67,9 +68,9 @@ function deliverCourier(Courier $courier){
 }
 
 
+//creates specific instances
 echo "From the air \n";
 deliverCourier(new AirCourier());
 
 echo "From the ground ... \n";
 deliverCourier(new GroundCourier());
-
