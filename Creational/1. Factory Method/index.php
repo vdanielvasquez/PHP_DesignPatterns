@@ -23,15 +23,15 @@ class PlaneTransport implements  Transport {
 
 class TruckTransport implements Transport {
     public function ready(): void {
-        echo "Courier ready to be sent to the truck \n";
+        echo "Ready to be sent to the truck \n";
     }
 
     public function dispatch(): void {
-        echo "Courier is on its way to the truck \n";
+        echo "On its way to the truck \n";
     }
 
     public function deliver(): void {
-        echo "Courier from the truck is delivered to you \n";
+        echo "From the truck is delivered to you \n";
     }
 }
 
